@@ -6,8 +6,8 @@
 
 namespace Util {
 class Paraser {
-  public:
-    static MIP::Expression::Linear &parse(std::string);
+public:
+  static MIP::Expression::Linear &parse(std::string);
 };
 } // namespace Util
 #endif

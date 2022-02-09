@@ -7,13 +7,13 @@
 
 namespace MIP {
 class Objective {
-  public:
-    Objective(MIP::Expression::Linear &expression, std::string type)
-        : expression_(expression), type_(type) {}
+public:
+  Objective(MIP::Expression::Linear &expression, std::string type)
+      : expression_(expression), type_(type) {}
 
-  private:
-    MIP::Expression::Linear &expression_;
-    std::string type_;
+private:
+  MIP::Expression::Linear &expression_;
+  std::string type_;
 };
 } // namespace MIP
 #endif
