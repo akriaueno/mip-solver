@@ -1,16 +1,16 @@
 #ifndef MIP_LP_H_
 #define MIP_LP_H_
 
-#include "constraint.hpp"
-#include "objective.hpp"
-
 #include <set>
 #include <string>
 #include <vector>
 
+#include "constraint.hpp"
+#include "objective.hpp"
+
 namespace MIP {
 class LP {
-public:
+ public:
   LP();
   void add_variable(MIP::Variable);
   void add_variable(std::vector<MIP::Variable>);
@@ -20,10 +20,10 @@ public:
   double get_optimal();
   std::vector<MIP::Variable> get_optimal_variable();
 
-private:
+ private:
   std::set<MIP::Variable> variable_list_;
   MIP::Objective objective_;
   std::vector<MIP::Constraint> constraint_list_;
 };
-} // namespace MIP
+}  // namespace MIP
 #endif

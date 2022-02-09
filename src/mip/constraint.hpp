@@ -1,17 +1,17 @@
 #ifndef MIP_CONSTRAINT_H_
 #define MIP_CONSTRAINT_H_
 
-#include "expression/linear.hpp"
-
 #include <stdexcept>
 #include <string>
 
+#include "expression/linear.hpp"
+
 namespace MIP {
 class Constraint {
-public:
+ public:
   Constraint(Expression::Linear &, std::string, double);
 
-private:
+ private:
   Expression::Linear &l_expression_;
   double r_value_;
 };
@@ -29,5 +29,5 @@ Constraint::Constraint(Expression::Linear &l_expression,
                              inequality_sign);
   }
 }
-} // namespace MIP
+}  // namespace MIP
 #endif
