@@ -52,6 +52,11 @@
       "cwd": "/home/akira/dev/ip-solver",
       "binaryPath": "/home/akira/dev/ip-solver/solver",
       "binaryArgs": []
+    },
+    {
+      "cwd": "/home/akira/dev/mip-solver",
+      "binaryPath": "/home/akira/dev/mip-solver/solver",
+      "binaryArgs": []
     }
   ]
 }
