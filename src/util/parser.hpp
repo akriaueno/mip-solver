@@ -6,7 +6,7 @@
 #include "../mip/expression/linear.hpp"
 
 namespace Util {
-class Paraser {
+class Parser {
  public:
   static MIP::Expression::Linear &parse(std::string);
 };

@@ -6,13 +6,19 @@
 #include "expression/linear.hpp"
 
 namespace MIP {
+const std::string MINIMIZE = "minimize";
+const std::string MAXIMIZE = "maximize";
+
 class Objective {
  public:
-  Objective(MIP::Expression::Linear &expression, std::string type)
-      : expression_(expression), type_(type) {}
+  Objective();
+  Objective(MIP::Expression::Linear, std::string);
+  MIP::Expression::Linear getExpression();
+  bool isMinimize();
+  bool isMaximize();
 
  private:
-  MIP::Expression::Linear &expression_;
+  MIP::Expression::Linear expression_;
   std::string type_;
 };
 }  // namespace MIP

@@ -20,7 +20,7 @@ Constraint::Constraint(Expression::Linear &l_expression,
                        std::string inequality_sign, double r_value)
     : l_expression_(l_expression), r_value_(r_value) {
   if (inequality_sign == "<" || inequality_sign == "<=") {
-    // do notiong
+    // do nothing
   } else if (inequality_sign == ">" || inequality_sign == ">=") {
     l_expression_.reverse_term_sign();
     r_value_ *= -1;
