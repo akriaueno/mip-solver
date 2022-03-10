@@ -5,18 +5,18 @@
 #include <iostream>
 
 int main() {
-    auto linar1 = MIP::Expression::Linear();
+    auto linear = MIP::Expression::Linear();
 
     MIP::Variable x1("x1");
     MIP::Expression::Term term1(3.0, x1);
-    linar1.add_term(term1);
-    std::cout << linar1 << std::endl;
+    linear.add_term(term1);
+    std::cout << linear << std::endl;
 
     MIP::Variable x2("x2");
     MIP::Expression::Term term2(-1.0, x2);
-    linar1.add_term(term2);
-    std::cout << linar1 << std::endl;
+    linear.add_term(term2);
+    std::cout << linear << std::endl;
 
-    linar1.reverse_term_sign();
-    std::cout << linar1 << std::endl;
+    linear.reverse_term_sign();
+    std::cout << linear << std::endl;
 }
